@@ -143,4 +143,59 @@ git help nom_de_la_commande
 
 ---
 
-Cette documentation Markdown fournit un aperçu rapide des commandes Git les plus couramment utilisées. Pour une compréhension plus approfondie de Git, consultez la documentation officielle ou d'autres ressources en ligne.
+# Documentation Avancée des Commandes Usuelles de Git pour la Collaboration
+
+## Travail Collaboratif avec Git
+
+### Résoudre les conflits
+
+Lorsque plusieurs personnes travaillent sur le même projet, il est commun que des conflits surgissent lors de fusions (`merge`) ou de tirages (`pull`).
+
+Pour résoudre ces conflits :
+
+1. Git marquera les fichiers en conflit. Ouvrez ces fichiers et cherchez les sections marquées par `<<<<<<<`, `=======`, et `>>>>>>>`.
+2. Éditez les fichiers pour résoudre les conflits. Cela peut nécessiter une discussion avec les autres développeurs pour décider quelle modification garder.
+3. Après avoir résolu les conflits, ajoutez les fichiers avec `git add`.
+4. Complétez la fusion avec `git commit`. Git ouvrira un éditeur de texte pour vous permettre d'entrer un message de commit pour la fusion.
+
+### Pull Requests (Requêtes de Tirage)
+
+Les pull requests ne sont pas une fonctionnalité directe de Git mais sont utilisées sur des plateformes comme GitHub, GitLab, et Bitbucket pour gérer les contributions.
+
+1. Poussez votre branche vers le dépôt distant.
+2. Sur la plateforme (par exemple, GitHub), cliquez sur le bouton "Create Pull Request" ou "New Pull Request".
+3. Fournissez une description de vos changements et soumettez la pull request.
+4. L'équipe peut alors passer en revue les modifications, discuter et demander des changements si nécessaire.
+5. Une fois approuvée, la pull request peut être fusionnée dans la branche principale.
+
+### Tags
+
+Les tags sont utilisés pour marquer des points spécifiques dans l'historique du projet, généralement pour marquer les versions des releases.
+
+Pour créer un tag :
+
+```bash
+git tag -a v1.0 -m "Version 1.0"
+```
+
+Pour pousser les tags vers le dépôt distant :
+
+```bash
+git push origin --tags
+```
+
+### Stashing
+
+Si vous devez rapidement changer de contexte mais ne voulez pas commiter un travail inachevé, vous pouvez utiliser `git stash` pour mettre de côté vos modifications.
+
+Pour mettre de côté vos modifications :
+
+```bash
+git stash
+```
+
+Pour réappliquer vos modifications mises de côté :
+
+```bash
+git stash pop
+```
