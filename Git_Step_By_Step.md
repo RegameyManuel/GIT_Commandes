@@ -109,7 +109,6 @@ git push
 Voici les commandes Git fondamentales, de l'initialisation d'un dépôt à la fusion de branches et au rattachement d'un projet à GitHub. Git est un outil très puissant avec beaucoup plus de fonctionnalités et de nuances. Je vous encourage à expérimenter et à apprendre davantage pour maîtriser pleinement cet outil essentiel au développement logiciel.
 
 ### Pour aller plus loin ...
-
 - [Site officiel du projet Git](https://git-scm.com/)
 
 - [La documentation officielle complète sous la forme d'un livre](https://git-scm.com/book/fr/v2)

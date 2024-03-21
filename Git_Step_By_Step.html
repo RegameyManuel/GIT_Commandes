@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>1&period; Installation de Git</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h3 id="1-installation-de-git">1. Installation de Git</h3>
+<p>Tout d'abord, assurez-vous que Git est installé sur votre système. Vous pouvez le vérifier en ouvrant un terminal ou une invite de commandes et en tapant :</p>
+<pre><code class="language-bash">git --version
+</code></pre>
+<p>Si Git n'est pas installé, téléchargez-le et installez-le depuis <a href="https://git-scm.com/">le site officiel de Git</a>.</p>
+<h3 id="2-configuration-initiale-de-git">2. Configuration initiale de Git</h3>
+<p>Après l'installation, ouvrez un terminal et configurez votre nom d'utilisateur et votre adresse e-mail. Ces informations seront utilisées dans vos futurs commits :</p>
+<pre><code class="language-bash">git config --global user.name <span class="hljs-string">&quot;Votre Nom&quot;</span>
+git config --global user.email <span class="hljs-string">&quot;votreemail@example.com&quot;</span>
+</code></pre>
+<h3 id="3-initialiser-un-nouveau-dépôt-git">3. Initialiser un nouveau dépôt Git</h3>
+<p>Pour commencer à suivre un projet avec Git, naviguez dans le dossier de votre projet et utilisez :</p>
+<pre><code class="language-bash"><span class="hljs-built_in">cd</span> chemin/vers/votre/projet
+git init
+</code></pre>
+<p>Cela crée un nouveau sous-dossier <code>.git</code> contenant tous les fichiers nécessaires au fonctionnement de Git.</p>
+<h3 id="4-suivi-des-fichiers-et-premiers-commits">4. Suivi des fichiers et premiers commits</h3>
+<p>Pour commencer à suivre un fichier, utilisez la commande <code>git add</code>. Pour ajouter tous les fichiers d'un projet :</p>
+<pre><code class="language-bash">git add .
+</code></pre>
+<p>Pour enregistrer vos changements dans le dépôt, utilisez :</p>
+<pre><code class="language-bash">git commit -m <span class="hljs-string">&quot;Votre message de commit&quot;</span>
+</code></pre>
+<h3 id="5-vérifier-le-statut-de-vos-fichiers">5. Vérifier le statut de vos fichiers</h3>
+<p>Utilisez <code>git status</code> pour voir quels fichiers sont suivis et lesquels ont des modifications :</p>
+<pre><code class="language-bash">git status
+</code></pre>
+<h3 id="6-voir-lhistorique-des-commits">6. Voir l'historique des commits</h3>
+<p>Pour voir l'historique des commits, utilisez :</p>
+<pre><code class="language-bash">git <span class="hljs-built_in">log</span>
+</code></pre>
+<h3 id="7-branches-avec-git">7. Branches avec Git</h3>
+<p>Pour créer une nouvelle branche :</p>
+<pre><code class="language-bash">git branch nom_de_la_branche
+</code></pre>
+<p>Pour basculer entre les branches :</p>
+<pre><code class="language-bash">git checkout nom_de_la_branche
+</code></pre>
+<h3 id="8-fusionner-des-branches">8. Fusionner des branches</h3>
+<p>Pour fusionner une branche dans votre branche actuelle :</p>
+<pre><code class="language-bash">git merge nom_de_la_branche
+</code></pre>
+<h3 id="9-rattacher-un-projet-local-à-un-dépôt-github">9. Rattacher un projet local à un dépôt GitHub</h3>
+<ol>
+<li>
+<p><strong>Créer un dépôt sur GitHub</strong> : Allez sur GitHub, connectez-vous, et créez un nouveau dépôt (repository).</p>
+</li>
+<li>
+<p><strong>Lier votre dépôt local au dépôt GitHub</strong> :</p>
+</li>
+</ol>
+<pre><code class="language-bash">git remote add origin https://github.com/votre_nom_d_utilisateur/nom_du_dépôt.git
+</code></pre>
+<ol start="3">
+<li><strong>Envoyer votre code sur GitHub</strong> :</li>
+</ol>
+<p>Pour la première fois, vous devrez définir la branche principale et pousser vos changements :</p>
+<pre><code class="language-bash">git push -u origin main
+</code></pre>
+<p>Pour les envois suivants, utilisez simplement :</p>
+<pre><code class="language-bash">git push
+</code></pre>
+<h3 id="conclusion">Conclusion</h3>
+<p>Voici les commandes Git fondamentales, de l'initialisation d'un dépôt à la fusion de branches et au rattachement d'un projet à GitHub. Git est un outil très puissant avec beaucoup plus de fonctionnalités et de nuances. Je vous encourage à expérimenter et à apprendre davantage pour maîtriser pleinement cet outil essentiel au développement logiciel.</p>
+<h3 id="pour-aller-plus-loin-">Pour aller plus loin ...</h3>
+<ul>
+<li>
+<p><a href="https://git-scm.com/">Site officiel du projet Git</a></p>
+</li>
+<li>
+<p><a href="https://git-scm.com/book/fr/v2">La documentation officielle complète sous la forme d'un livre</a></p>
+</li>
+<li>
+<p><a href="https://grafikart.fr/tutoriels/git">Une série de tutoriels/vidéos sur Git par Grafikart</a></p>
+</li>
+</ul>
+
+            
+            
+        </body>
+        </html>
