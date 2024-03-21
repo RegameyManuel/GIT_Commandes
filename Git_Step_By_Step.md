@@ -80,7 +80,15 @@ Pour fusionner une branche dans votre branche actuelle :
 git merge nom_de_la_branche
 ```
 
-### 9. Rattacher un projet local à un dépôt GitHub
+### 9. Récuperer un projet
+
+Pour récupérer une version de projet correspondand à un commit spécifique
+
+```bash
+git reset --hard numero_du_commit
+```
+
+### 10. Rattacher un projet local à un dépôt GitHub
 
 1. **Créer un dépôt sur GitHub** : Allez sur GitHub, connectez-vous, et créez un nouveau dépôt (repository).
 
@@ -104,11 +112,12 @@ Pour les envois suivants, utilisez simplement :
 git push
 ```
 
-### Conclusion
+### 11 Conclusion
 
 Voici les commandes Git fondamentales, de l'initialisation d'un dépôt à la fusion de branches et au rattachement d'un projet à GitHub. Git est un outil très puissant avec beaucoup plus de fonctionnalités et de nuances. Je vous encourage à expérimenter et à apprendre davantage pour maîtriser pleinement cet outil essentiel au développement logiciel.
 
-### Pour aller plus loin ...
+### 12 Pour aller plus loin ...
+
 - [Site officiel du projet Git](https://git-scm.com/)
 
 - [La documentation officielle complète sous la forme d'un livre](https://git-scm.com/book/fr/v2)
